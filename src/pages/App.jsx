@@ -1,9 +1,18 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./App.css";
+import {
+  BrowserRouter as Router,
+  Route,
+  Navigate,
+  Routes,
+} from "react-router-dom";
 import Login from "./login/Login";
 
-const router = createBrowserRouter([{ path: "/login", element: <Login /> }]);
-
 export default function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <Router>
+      <Routes>
+        <Route path="/login" element={<Login />} />
+        <Route path="*" element={<Navigate to="/login" replace />} />
+      </Routes>
+    </Router>
+  );
 }

@@ -9,10 +9,10 @@ export default function Login() {
     <div className={`${styles.bg} ${styles.wrap}`}>
       <section className={styles.card} aria-label="Sign in">
         <div className={styles.brand}>
-          <img className={styles.logo} src={Logo} alt="CoolCommand" />
+          <img className={styles.logo} src={Logo} alt="Cool Command" />
           <div>
-            <h1 className={styles.heading}>Welcome back</h1>
-            <p className={styles.sub}>Sign in to your account</p>
+            <h1 className={styles.heading}>Login</h1>
+            <p className={styles.sub}>CoolCommand</p>
           </div>
         </div>
 
