@@ -12,28 +12,28 @@ export default function Sidebar() {
   return (
     <aside className={styles.sidebar}>
       <div className={styles.sidebarProfile}>
-        <FiUser size={20} />
+        <FiUser size={40} />
       </div>
       <nav className={styles.sidebarNav}>
         <ul>
           <li className={styles.list}>
             <a href="#" className={styles.link}>
-              <FiGrid /> <p>Dashboard</p>
+              <FiGrid size={30}/> <p>Dashboard</p>
             </a>
           </li>
           <li className={styles.list}>
             <a href="#" className={styles.link}>
-              <FiHome /> <p>Room</p>
+              <FiHome size={30}/> <p>Room</p>
             </a>
           </li>
           <li className={styles.list}>
             <a href="#" className={styles.link}>
-              <FiBarChart2 /> <p>Analysis</p>
+              <FiBarChart2 size={30}/> <p>Analysis</p>
             </a>
           </li>
           <li>
             <a href="#" className={styles.link}>
-              <FiPlusSquare /> <p>Add Devices</p>
+              <FiPlusSquare size={30}/> <p>Add Devices</p>
             </a>
           </li>
         </ul>
