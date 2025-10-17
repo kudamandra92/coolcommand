@@ -19,11 +19,13 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* Font sizes */
-  --paragraph: 0.5rem; /* 16px */
-  --heading4: 0.75em; /* 16px */
-  --heading3: 1rem; /* 32px */
-  --heading2: 1.25rem; /* 36px */
-  --heading1: 1.5rem; /* 40px */
+  --paragraph: 1rem; /* 16px */
+  --label: 1.25rem; /* 16px */
+  --heading5: 1.5rem; /* 16px */
+  --heading4: 1.75em; /* 16px */
+  --heading3: 2rem; /* 32px */
+  --heading2: 2.25rem; /* 36px */
+  --heading1: 2.5rem; /* 40px */
 
   /* Font weights */
   --font-regular: 400;

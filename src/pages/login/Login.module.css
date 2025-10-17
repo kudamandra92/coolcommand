@@ -33,15 +33,15 @@
 }
 
 .sub {
-  margin: 0;
+  margin-bottom: var(--sp-8);
   color: #7c7c7f;
   font-weight: 500;
 }
 
 .form {
-  width: 70%;
+  width: 100%;
   display: grid;
-  gap: var(--sp-2);
+  gap: var(--sp-3);
 }
 
 .field {
@@ -50,6 +50,7 @@
 }
 label {
   font-weight: 500;
+  font-size: var(--heading3);
 }
 .inputWrap {
   position: relative;
@@ -63,11 +64,10 @@ label {
   border-radius: var(--radius-md);
   outline: none;
   transition: border-color 120ms ease, box-shadow 120ms ease;
-  font-size: var(--paragraph);
 }
 
 .btn {
-  margin-top: var(--sp-8);
+  margin-top: var(--sp-12);
   display: inline-grid;
   grid-auto-flow: column;
   gap: 0.5rem;
@@ -84,6 +84,7 @@ label {
     transform 120ms ease;
   box-shadow: 0 10px 24px
     color-mix(in oklab, var(--login-primary) 35%, transparent);
+  font-weight: 550;
 }
 .btn:hover {
   background: var(--color-blueish);

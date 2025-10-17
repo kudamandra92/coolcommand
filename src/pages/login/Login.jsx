@@ -11,8 +11,8 @@ export default function Login() {
         <div className={styles.brand}>
           <img className={styles.logo} src={Logo} alt="Cool Command" />
           <div className={styles.brand}>
-            <h3>Login</h3>
-            <h4 className={styles.sub}>Cool Command</h4>
+            <h1>Login</h1>
+            <h3 className={styles.sub}>Cool Command</h3>
           </div>
         </div>
 
@@ -52,7 +52,7 @@ export default function Login() {
           </div>
 
           <button className={styles.btn} type="submit">
-            Sign in
+            Login
           </button>
         </form>
       </section>
