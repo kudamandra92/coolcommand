@@ -10,9 +10,9 @@ export default function Login() {
       <section className={styles.card} aria-label="Sign in">
         <div className={styles.brand}>
           <img className={styles.logo} src={Logo} alt="Cool Command" />
-          <div>
-            <h1 className={styles.heading}>Login</h1>
-            <p className={styles.sub}>CoolCommand</p>
+          <div className={styles.brand}>
+            <h3>Login</h3>
+            <h4 className={styles.sub}>Cool Command</h4>
           </div>
         </div>
 
@@ -24,24 +24,20 @@ export default function Login() {
           }}
         >
           <div className={styles.field}>
-            <label htmlFor="email" className={styles.label}>
-              Email
-            </label>
+            <label htmlFor="email">Username</label>
             <input
               id="email"
               name="email"
-              type="email"
+              type="text"
               required
-              placeholder="you@company.com"
+              placeholder="NIK"
               className={styles.input}
               autoComplete="email"
             />
           </div>
 
           <div className={styles.field}>
-            <label htmlFor="password" className={styles.label}>
-              Password
-            </label>
+            <label htmlFor="password">Password</label>
             <div className={styles.inputWrap}>
               <input
                 id="password"
@@ -49,44 +45,16 @@ export default function Login() {
                 required
                 placeholder="••••••••"
                 className={styles.input}
-                type={show ? "text" : "password"}
+                type="password"
                 autoComplete="current-password"
               />
-              <span
-                className={styles.toggle}
-                onClick={() => setShow((s) => !s)}
-                aria-live="polite"
-              >
-                {show ? "Hide" : "Show"}
-              </span>
             </div>
-          </div>
-
-          <div className={styles.row}>
-            <label className={styles.checkbox}>
-              <input type="checkbox" name="remember" /> Remember me
-            </label>
-            <a className={styles.link} href="#">
-              Forgot password?
-            </a>
           </div>
 
           <button className={styles.btn} type="submit">
             Sign in
           </button>
-
-          <div className={styles.or}>or continue with</div>
-          <button type="button" className={styles.btnGhost}>
-            Google
-          </button>
         </form>
-
-        <div className={styles.footer}>
-          Don’t have an account?{" "}
-          <a className={styles.link} href="#">
-            Create one
-          </a>
-        </div>
       </section>
     </div>
   );
